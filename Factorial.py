@@ -1,10 +1,10 @@
-def factorialnum(n):
-    fact=1
-    x=2
-    while fact<=n:
-        print(fact,end=" ")
-
-        fact = fact * x
-        x += 1
-n = 100
-factorialnum(n)
+def factorial(n):
+    if(n==1):
+        return 1
+    else:
+        return n*factorial(n-1)
+n=int(input("Enter The Number: "))
+x=factorial(n)
+print("Factorial Is",x)
+        
+    
